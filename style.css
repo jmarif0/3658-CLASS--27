@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    width: 100%;
+}
+
+.clearFix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.fixed_width{
+    width: 1270px;
+    margin: auto;
+}
+
+/* HEADER STYLE */
+.header{
+    background: #22c3a3;
+}
+.header .left_logo{
+    float: left;
+    width: 30%;
+    text-align: left;
+    
+}
+.header .left_logo h2{
+    color: #fff;
+    margin-top: 12px;
+}
+.header .right_menu{
+    float: right;
+    width: 70%;
+    text-align: right;
+}
+.header .right_menu ul{
+    list-style: none;
+}
+.header .right_menu ul li{
+    display: inline-block;
+}
+.header .right_menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 20px;
+    display: inline-block;
+    
+}
+.header .right_menu ul li a:hover{
+    background: #0a5546;
+    color: #000;
+}
+
+/* BANNER STYLE */
+.banner{
+    background-image: url(https://img.hotimg.com/header-bg0143975e04a6bd0132.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 200px 0;
+    background-attachment: fixed;
+
+}
+.banner h1{
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bold;
+}
+.banner p{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin: 30px 0;
+}
+.banner span{
+    text-align: center;
+    display: block;
+}
+.banner span a{
+    color: #fff;
+    padding: 10px 15px;
+    border: 1.5px solid #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+}
+.banner span a:hover{
+    color: #22c3a3;
+}
+   
+
+.banner span a::before{
+    content: "";
+    height: 100%;
+    width: 0;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    display: inline-block;
+    transition: .5s; 
+    z-index: -1; 
+}
+.banner span a:hover::before{
+    width: 100%;
+    
+}
+
+/* SERVICE STYLE */
+.service{
+    text-align: center;
+    padding: 60px 0;
+    border-bottom: 2px solid #22c3a3;
+}
+.service h2{
+    margin-bottom: 20px;
+}
+.service p{
+    margin-bottom: 100px;
+}
+.service .service_item{
+    width: 20%;
+    float: left;
+    margin-right: 5%;
+}
+.service .service_item span{
+    font-size: 30px;
+    color: #22c3a3;
+}
+.service .service_item h3{
+    margin: 20px 0;
+    font-size: 25px;
+}
+.service .service_item p{
+    font-size: 20px;
+}
+
+/* ABOUT STYLE */
+.about{
+    text-align: center;
+    padding: 40px 0;
+}
+.about h3{}
+.about p{
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.about .right_img{
+    float: left;
+    width: 40%;
+    text-align: left;
+}
+.about .right_img img{
+    max-width: 100%;
+}
+.about .left_content{
+    float: right;
+    width: 55%;
+    text-align: left;
+}
+.about .left_content h4{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.about .left_content p{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/* CONTACT STYLE */
+.contact{
+    background: #f6f6f6;
+    text-align: center;
+    padding: 60px 0;
+}
+.contact h3{
+    margin-bottom: 20px;
+}
+.contact p{
+    margin-bottom: 60px;
+}
+.contact .contact_section{
+    text-align: center;
+    width: 33%;
+    float: left;
+    
+}
+.contact .contact_section span{
+    color: #22c3a3;
+    font-size: 18px;
+}
+.contact .contact_section p{
+    margin-top: 10px;
+   
+}
+.contact .contact_section .contact_box1{
+    width: 160px;
+    text-align: center;
+    
+}
+.contact .contact_section .contact_box2{
+    width: 160px;
+    text-align: center;
+    margin-left: 130px;
+}
+
+.contact .contact_section .contact_box3{
+    width: 160px;
+    text-align: center;
+    float: right;
+}
+
+/* FOOTER STYLE */
+.footer{
+    background: #22c3a3;
+    padding: 15px 0;
+    text-align: center;
+}
+.footer span{
+    margin-right: 15px;
+}
+
+.footer span a{
+    text-decoration: none;
+}
+.footer span a i{
+    color: #fff;
+    transition: .8s;
+}
+.footer span a:hover i{
+    transform: scale(1.3);
+    color: #222222;
+}
+
+/* FOOTER BOTTOM */
+.footer_bottom{
+    background: #222222;
+    padding: 10px 0;
+}
+.footer_bottom p{
+    text-align: center;
+    color: #aca9a9;
+}
